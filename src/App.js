@@ -10,7 +10,7 @@ import ProjectsPage from "./containers/ProjectsPage";
 function App() {
   return (
     <div>
-      <Router basename="/home">
+      <Router>
         <Switch>
           <Route path="/" component={Main} exact/>
           <Route path="/projects" component={ProjectsPage} />
