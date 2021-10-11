@@ -12,7 +12,7 @@ const greeting = {
   subTitle: `You can call me Abdil`,
   
   resumeLink:
-    "https://drive.google.com/file/d/17XywETFZHN7X1bHSISY_P0v7pVdXkIFV/view?usp=sharing",
+    "https://drive.google.com/file/d/1PId9qbii9kk3juVAuibAv1DfZipfeBv2/view?usp=sharing",
   displayGreeting: true
 };
 
@@ -122,7 +122,7 @@ const workExperiences = {
       role: "Junior Web Developer",
       company: "PT. MICROVAC INDONESIA",
       companylogo: require("./assets/images/microvac-logo.jpg"),
-      date: "Apr 2021 – Now",
+      date: "Apr 2021 – Aug 2021",
       descBullets: [
         "Learn and solved sideka web issue 7287 villages.",
         "Leveraged API and JSON to inspect, filter database tables for province, district, sub-district, email, and domain.",
