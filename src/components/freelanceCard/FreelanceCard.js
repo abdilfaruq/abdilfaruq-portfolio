@@ -46,9 +46,6 @@ export default function FreelanceCard({freelance, isDark}) {
           <p className={isDark ? "small-dark freelance-date" : "freelance-date"}>
             {freelance.date}
           </p>
-          <p className={isDark ? "small-dark small" : "small"}>
-            {freelance.description}
-          </p>
           <div className="go-corner">
             <div className="go-arrow">→</div>
           </div>

@@ -14,8 +14,7 @@ export default function WorkExperience() {
         <Fade bottom duration={1000} distance="20px">
           <div className="experience-container" id="workExperience">
             <div>
-              <h1 className="experience-heading">Where I’ve Worked
-              <span>{emoji("💼")}</span>
+              <h1 className="experience-heading">Where I’ve Worked <span role="img" aria-label="Briefcase">💼</span>
               </h1>
               <div className="experience-cards-div">
                 {workExperiences.experience.map((card, i) => {

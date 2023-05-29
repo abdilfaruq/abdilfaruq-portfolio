@@ -1,4 +1,5 @@
 // Summary And Greeting Section
+import React from "react";
 import emoji from "react-easy-emoji";
 
 const illustration = {
@@ -12,7 +13,7 @@ const greeting = {
   subTitle: `You can call me Abdil`,
   
   resumeLink:
-    "https://drive.google.com/file/d/1PId9qbii9kk3juVAuibAv1DfZipfeBv2/view?usp=sharing",
+    "https://drive.google.com/file/d/1KIvrqRxS-VxGPTr25kkYKx92HPcubSCb/view?usp=sharing",
   displayGreeting: true
 };
 
@@ -31,13 +32,9 @@ const skillsSection = {
   title: "Skills💻",
   subTitle: "Here are a few technologies i've been working with:",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Frontend for your web."
-    ),
-    emoji("⚡ Progressive Web Applications (PWA) in normal and SPA Stacks."),
-    emoji(
-      "⚡ Integration of third party services such as Firebase."
-    )
+    <span role="img" aria-label="Voltage">⚡ Develop highly interactive Frontend for your web.</span>,
+    <span role="img" aria-label="Voltage">⚡ Progressive Web Applications (PWA) in normal and SPA Stacks.</span>,
+    <span role="img" aria-label="Voltage">⚡ Integration of third party services such as Firebase.</span>
   ],
 
   softwareSkills: [
@@ -50,8 +47,16 @@ const skillsSection = {
       fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
+      skillName: "Bootstrap",
+      fontAwesomeClassname: "fab fa-bootstrap"
+    },
+    {
       skillName: "SASS",
       fontAwesomeClassname: "fab fa-sass"
+    },
+    {
+      skillName: "PHP",
+      fontAwesomeClassname: "fab fa-php"
     },
     {
       skillName: "JavaScript",
@@ -62,36 +67,36 @@ const skillsSection = {
       fontAwesomeClassname: "fab fa-react"
     },
     {
-      skillName: "GitHub",
-      fontAwesomeClassname: "fab fa-github"
-    },
-    {
-      skillName: "PHP",
-      fontAwesomeClassname: "fab fa-php"
-    },
-    {
       skillName: "WordPress",
       fontAwesomeClassname: "fab fa-wordpress"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
     },
     {
       skillName: "Joomla",
       fontAwesomeClassname: "fab fa-joomla"
     },
     {
-      skillName: "Bootrstrap",
-      fontAwesomeClassname: "fab fa-bootstrap"
+      skillName: "Laravel",
+      fontAwesomeClassname: "fab fa-laravel"
     },
     {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
+      skillName: "NodeJS",
+      fontAwesomeClassname: "fab fa-node"
     },
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "sql-database",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "Git",
+      fontAwesomeClassname: "fab fa-git"
+    },
+    {
+      skillName: "Jira",
+      fontAwesomeClassname: "fab fa-jira"
+    },
+    {
+      skillName: "Slack",
+      fontAwesomeClassname: "fab fa-slack"
     }
   ],
   display: true
@@ -119,36 +124,39 @@ const workExperiences = {
   display: true,
   experience: [
     {
+      role: "Web Developer",
+      company: "PT. SENJA SOLUTIONS",
+      companylogo: require("./assets/images/senja.png"),
+      date: "Oct 2021 – Jun 2023",
+      descBullets: [
+        "Converse International School of Languages (CISL) Vendor as Front End Developer Frameworks: WordPress.",
+        "English Language Center (ELC) Vendor as Front End Developer Frameworks: WordPress.",
+        "ReBill Point of Sale (POS) Internal Project as Front End Developer Frameworks: ReactJS, Laravel.",
+        "Heiko Prigge Vendor as Front End Developer Frameworks: Laravel.",
+        "Digital Products 669 Internal Project as Front End Developer Frameworks: Laravel.",
+        "PT. Pinduit Teknologi (Pintek) Vendor as Front End Developer Frameworks: ReactJS.",
+      ]
+    },
+    {
       role: "Junior Web Developer",
       company: "PT. MICROVAC INDONESIA",
       companylogo: require("./assets/images/microvac-logo.jpg"),
       date: "Apr 2021 – Aug 2021",
       descBullets: [
-        "Learn and solved sideka web issue 7287 villages.",
-        "Leveraged API and JSON to inspect, filter database tables for province, district, sub-district, email, and domain.",
-        "Developed HTTPS certificate plugin using php for wordpress containing dashboard, certificates, domains and logs."
+        "Learn and solve Sideka web issue 7287 villages.",
+        "Utilized APIs and JSON to efficiently inspect and filter database tables for province, district, sub-district, email, and domain, ensuring accurate data retrieval and manipulation.",
+        "Developed a custom HTTPS certificate plugin using PHP for WordPress, featuring a user-friendly dashboard and functionalities for managing certificates, domains, and logs. This enhanced website security and streamlined certificate management processes."
       ]
     },
     {
       role: "Software Engineer",
       company: "PT. SEMBADA KARYA MANDIRI",
       companylogo: require("./assets/images/skm-logo.png"),
-      date: "Feb 2020 – Apr 2020",
+      date: "Feb 2020 – Apr 2021",
       descBullets: [
-        "Learn Control System Application Software Development.",
-        "Learn C++ and Redis.",
-        "Review Library Redis."
-      ]
-    },
-    {
-      role: "Knowledge Management System Internship",
-      company: "PT. POS INDONESIA",
-      companylogo: require("./assets/images/pos-logo.png"),
-      date: "May 2018 – Aug 2018",
-      descBullets: [
-        "Look Specifically at Activities within the Company.",
-        "Knowing and Understanding Applications in the World of Computer Informatics, Especially Website Designed.",
-        "Creating a Website PT.POS INDONESIA (PERSERO) Specifically for Employees using Joomla V.3."
+        "Acquired in-depth knowledge in Control System Application Software Development, gaining valuable experience in developing software solutions for control systems.",
+        "Developed proficiency in programming languages such as C++ and Redis, expanding technical skills and capabilities.",
+        "Conducted thorough reviews of the Redis library, contributing to the understanding and improvement of its functionality and performance."
       ]
     }
   ]
@@ -161,36 +169,80 @@ const openSource = {
 
 // Achievement Section
 const achievementSection = {
-  title: emoji("Some Things I’ve Built💡"),
+  title: <span role="img" aria-label="Lamp">Built💡</span>,
   subtitle:
     "more coming soon",
 
   achievementsCards: [
     {
-      title: "Personal Website ReactJS",
-      subtitle:
-        "My Personal Website ReactJS built using HTML, SASS, JavaScript, and ReactJS.",
-      image: require("./assets/images/portfolio12.png"),
+      title: "ReBill Point of Sale (POS)",
+      subtitle: "ReBill is the world's first real-time Point-of-Sales System for Web and Mobile, complemented by a state-of-the-art Business Owner Dashboard.",
+      description: "TOOLS: HTML, Tailwind, Laravel, ReactJS, MySQL (MAMP), Visual Studio Code, and Github.",
+      image: require("./assets/images/portfolio15.png"),
       footerLink: [
         {
-          name: "You are on the page now",
-          url: "/"
+          name: "View Online",
+          url: "https://rebill-pos.com/en"
         }
       ]
     },
     {
-      title: "Personal Website",
-      subtitle:
-        "My Personal Website built using HTML, CSS, JavaScript, jQuery, and Bootstrap to build This static website.",
-      image: require("./assets/images/portfolio1.png"),
+      title: "Pinduit Teknologi (Pintek)",
+      subtitle: "Pintek is a digital financial company with a mission to support business capitalization for Indonesian entrepreneurs through comprehensive financial services and business development support.",
+      description: "TOOLS: HTML, SASS, JavaScript, ReactJS, Ant-Design, Figma, Visual Studio Code, and Github.",
+      image: require("./assets/images/portfolio20.png"),
       footerLink: [
         {
-          name: "View Source",
-          url: "https://github.com/abdilfaruq/abdilfaruq.github.io"
-        },
+          name: "View Online",
+          url: "https://pintek.id/"
+        }
+      ]
+    },
+    {
+      title: "Heiko Prigge",
+      subtitle: "Heiko Prigge is a photographer based in London. He discovered his love for photography on a road trip across the U.S. and started assisting various photographers including Terry O'Neill and Mark Abrahams.",
+      description: "TOOLS: HTML, CSS, PHP, Laravel, MySQL (MAMP), Visual Studio Code, and Github.",
+      image: require("./assets/images/portfolio16.png"),
+      footerLink: [
         {
           name: "View Online",
-          url: "https://abdilfaruq.github.io"
+          url: "https://www.heikoprigge.com/#/"
+        }
+      ]
+    },
+    {
+      title: "Digital Products 669",
+      subtitle: "Digital Products 669 specializes in Motion Template Development.",
+      description: "TOOLS: HTML, CSS, PHP, Laravel, MySQL (MAMP), Visual Studio Code, and Github.",
+      image: require("./assets/images/portfolio17.png"),
+      footerLink: [
+        {
+          name: "View Online",
+          url: "https://www.dp669.com/"
+        }
+      ]
+    },
+    {
+      title: "Converse International School of Languages (CISL)",
+      subtitle: "CISL is one of the few language schools in North America that guarantees a maximum of 8 students per class, providing each student with more speaking time and individual attention.",
+      description: "TOOLS: HTML, CSS, PHP, Wordpress, MySQL (MAMP), Visual Studio Code, and Github.",
+      image: require("./assets/images/portfolio18.png"),
+      footerLink: [
+        {
+          name: "View Online",
+          url: "https://cisl.edu/"
+        }
+      ]
+    },
+    {
+      title: "English Language Center (ELC)",
+      subtitle: "The English Language Center (ELC) has been dedicated to providing high-quality English programs to international students since 1978.",
+      description: "TOOLS: HTML, CSS, PHP, Wordpress, MySQL (MAMP), Visual Studio Code, and Github.",
+      image: require("./assets/images/portfolio19.png"),
+      footerLink: [
+        {
+          name: "View Online",
+          url: "https://elc.edu/"
         }
       ]
     },
@@ -207,37 +259,13 @@ const achievementSection = {
       ]
     },
     {
-      title: "Client Demo Bootstrap",
-      subtitle: 
-        "Client demo Bootstrap is the landing page built using HTML, CSS, Javascript, and Bootstrap.",
-      image: require("./assets/images/portfolio4.png"),
+      title: "Personal Website ReactJS",
+      subtitle:"My Personal Website ReactJS built using HTML, SASS, JavaScript, and ReactJS.",
+      image: require("./assets/images/portfolio12.png"),
       footerLink: [
         {
-          name: "View Online",
-          url: "https://client-demo-1.netlify.app/"
-        }
-      ]
-    },
-    {
-      title: "Wordpress Plugin",
-      subtitle: 
-        "Wordpress Plugin are written in the PHP and integrate seamlessly with WordPress. This plugin created to Network Admin in Wordpress Multisite.",
-      image: require("./assets/images/portfolio6.png"),
-      footerLink: [
-        {
-          name: "View Source",
-          url: "https://github.com/abdilfaruq/wordpress-plugin"
-        }
-      ]
-    },
-    {
-      title: "Internship",
-      subtitle: "Knowledge Management System of PT. POS INDONESIA (PERSERO) Website-based using Joomla Version 3.",
-      image: require("./assets/images/internship.jpg"),
-      footerLink: [
-        {
-          name: "View Online",
-          url: "https://github.com/abdilfaruq/Internship"
+          name: "You are on the page now",
+          url: "/"
         }
       ]
     }
@@ -248,6 +276,96 @@ const achievementSection = {
 // Achievement2 Section
 const achievementSection2 = {
   achievementsCards: [
+    {
+      title: "ReBill Point of Sale (POS)",
+      subtitle: "TOOLS: HTML, Tailwind, Laravel, ReactJS, MySQL (MAMP), Visual Studio Code, and Github.",
+      image: require("./assets/images/portfolio15.png"),
+      footerLink: [
+        {
+          name: "View Source",
+          url: "https://github.com/abdilfaruq/react-card-app"
+        },
+        {
+          name: "View Online",
+          url: "https://abdilfaruq.github.io/CardApp/"
+        }
+      ]
+    },
+    {
+      title: "Pinduit Teknologi (Pintek)",
+      subtitle: "TOOLS: HTML, SASS, JavaScript, ReactJS, Ant-Design, Figma, Visual Studio Code, and Github.",
+      image: require("./assets/images/portfolio20.png"),
+      footerLink: [
+        {
+          name: "View Source",
+          url: "https://github.com/abdilfaruq/react-card-app"
+        },
+        {
+          name: "View Online",
+          url: "https://abdilfaruq.github.io/CardApp/"
+        }
+      ]
+    },
+    {
+      title: "Heiko Prigge",
+      subtitle: "TOOLS: HTML, CSS, PHP, Laravel, MySQL (MAMP), Visual Studio Code, and Github.",
+      image: require("./assets/images/portfolio16.png"),
+      footerLink: [
+        {
+          name: "View Source",
+          url: "https://github.com/abdilfaruq/react-card-app"
+        },
+        {
+          name: "View Online",
+          url: "https://abdilfaruq.github.io/CardApp/"
+        }
+      ]
+    },
+    {
+      title: "Digital Products 669",
+      subtitle: "TOOLS: HTML, CSS, PHP, Laravel, MySQL (MAMP), Visual Studio Code, and Github.",
+      image: require("./assets/images/portfolio17.png"),
+      footerLink: [
+        {
+          name: "View Source",
+          url: "https://github.com/abdilfaruq/react-card-app"
+        },
+        {
+          name: "View Online",
+          url: "https://abdilfaruq.github.io/CardApp/"
+        }
+      ]
+    },
+    {
+      title: "Converse International School of Languages (CISL)",
+      subtitle: "TOOLS: HTML, CSS, PHP, Wordpress, MySQL (MAMP), Visual Studio Code, and Github.",
+      image: require("./assets/images/portfolio18.png"),
+      footerLink: [
+        {
+          name: "View Source",
+          url: "https://github.com/abdilfaruq/react-card-app"
+        },
+        {
+          name: "View Online",
+          url: "https://abdilfaruq.github.io/CardApp/"
+        }
+      ]
+    },
+    {
+      title: "English Language Center (ELC)",
+      subtitle: "TOOLS: HTML, CSS, PHP, Wordpress, MySQL (MAMP), Visual Studio Code, and Github.",
+      image: require("./assets/images/portfolio19.png"),
+      footerLink: [
+        {
+          name: "View Source",
+          url: "https://github.com/abdilfaruq/react-card-app"
+        },
+        {
+          name: "View Online",
+          url: "https://abdilfaruq.github.io/CardApp/"
+        }
+      ]
+    },
     {
       title: "Personal Website ReactJS",
       subtitle: "TOOLS: HTML, SASS, JavaScript, ReactJS, Visual Studio Code, Photoshop and Github.",
@@ -342,7 +460,7 @@ const achievementSection2 = {
     },
     {
       title: "Wordpress Plugin",
-      subtitle: "TOOLS: PHP, Wordpress, MySQL, Laragon, Visual Studio Code, and Gitlab.",
+      subtitle: "TOOLS: PHP, Wordpress, MySQL (Laragon), Visual Studio Code, and Gitlab.",
       image: require("./assets/images/portfolio6.png"),
       footerLink: [
         {
@@ -353,7 +471,7 @@ const achievementSection2 = {
     },
     {
       title: "Wordpress Client",
-      subtitle: "TOOLS: PHP, Wordpress, MySQL, Laragon, Visual Studio Code, and Gitlab.",
+      subtitle: "TOOLS: PHP, Wordpress, MySQL (Laragon), Visual Studio Code, and Gitlab.",
       image: require("./assets/images/portfolio7.png"),
       footerLink: [
         {
@@ -424,14 +542,13 @@ const achievementSection2 = {
 
 // Freelance Section
 const freelanceSection = {
-  title: "Freelance",
+  title: "Freelancer",
 
   freelance: [
     {
       image: require("./assets/images/scalebizz-logo.jpg"),
       title: "Scalebizz Digital",
-      date: "Dec 2020 – Jan 2021",
-      description: "Frontend Developer",
+      date: "Frontend Developer | Dec 2020 – Jan 2021",
       descBullets: [
         "Developed the user interface using VueJS.",
         "Architecture the backend server using python django for the database.",
@@ -441,8 +558,7 @@ const freelanceSection = {
     {
       image: require("./assets/images/linguo-logo.jpg"),
       title: "Linguo ID",
-      date: "Aug 2021 – Sep 2021",
-      description: "Frontend Developer",
+      date: "Frontend Developer | Aug 2021 – Sep 2021",
       descBullets: [
         "Develop web using HTML5, CSS3, Bootstrap, and ReactJS by leveraged Figma",
         "Develop a dashboard, register, login for linguo using ReactJS"
@@ -455,12 +571,11 @@ const freelanceSection = {
 // About Sections
 const aboutSection = {
   title: "Who's Abdil?",
-  subtitle: "I am a person that has a natural thirst for knowledge, independent but great working in team. I like learning things about web programming, web frameworks, and also computer technology.",
-  subtitle2: "Looking for an opportunity to work about Software Engineering, which provides professional development, interesting experiences and personal growth.",
-  subtitle3: "My future goal : Being Useful For Others.",
+  subtitle: "I am a skilled Front End Developer with a Bachelor's degree in Computational Science. I specialize in building attractive and user-friendly websites and web applications that provide a seamless user experience.",
+  subtitle2: "I am seeking an opportunity to work in Software Engineering and Front End Development that offers professional development, challenging experiences, and personal growth.",
+  subtitle3: "My future goal : Being useful for others.",
   about: [
     {
-      image: require("./assets/images/scalebizz-logo.jpg")
     }
   ],
   display: true

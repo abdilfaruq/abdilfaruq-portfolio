@@ -34,7 +34,6 @@ export default function Freelance() {
                     image: freelance.image,
                     title: freelance.title,
                     date: freelance.date,
-                    description: freelance.description,
                     descBullets: freelance.descBullets
                   }}
                 />
