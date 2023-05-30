@@ -282,12 +282,8 @@ const achievementSection2 = {
       image: require("./assets/images/portfolio15.png"),
       footerLink: [
         {
-          name: "View Source",
-          url: "https://github.com/abdilfaruq/react-card-app"
-        },
-        {
           name: "View Online",
-          url: "https://abdilfaruq.github.io/CardApp/"
+          url: "https://rebill-pos.com/en"
         }
       ]
     },
@@ -297,12 +293,8 @@ const achievementSection2 = {
       image: require("./assets/images/portfolio20.png"),
       footerLink: [
         {
-          name: "View Source",
-          url: "https://github.com/abdilfaruq/react-card-app"
-        },
-        {
           name: "View Online",
-          url: "https://abdilfaruq.github.io/CardApp/"
+          url: "https://pintek.id/"
         }
       ]
     },
@@ -312,12 +304,8 @@ const achievementSection2 = {
       image: require("./assets/images/portfolio16.png"),
       footerLink: [
         {
-          name: "View Source",
-          url: "https://github.com/abdilfaruq/react-card-app"
-        },
-        {
           name: "View Online",
-          url: "https://abdilfaruq.github.io/CardApp/"
+          url: "https://www.heikoprigge.com/#/"
         }
       ]
     },
@@ -327,12 +315,8 @@ const achievementSection2 = {
       image: require("./assets/images/portfolio17.png"),
       footerLink: [
         {
-          name: "View Source",
-          url: "https://github.com/abdilfaruq/react-card-app"
-        },
-        {
           name: "View Online",
-          url: "https://abdilfaruq.github.io/CardApp/"
+          url: "https://www.dp669.com/"
         }
       ]
     },
@@ -342,12 +326,8 @@ const achievementSection2 = {
       image: require("./assets/images/portfolio18.png"),
       footerLink: [
         {
-          name: "View Source",
-          url: "https://github.com/abdilfaruq/react-card-app"
-        },
-        {
           name: "View Online",
-          url: "https://abdilfaruq.github.io/CardApp/"
+          url: "https://cisl.edu/"
         }
       ]
     },
@@ -357,12 +337,8 @@ const achievementSection2 = {
       image: require("./assets/images/portfolio19.png"),
       footerLink: [
         {
-          name: "View Source",
-          url: "https://github.com/abdilfaruq/react-card-app"
-        },
-        {
           name: "View Online",
-          url: "https://abdilfaruq.github.io/CardApp/"
+          url: "https://elc.edu/"
         }
       ]
     },
@@ -476,7 +452,7 @@ const achievementSection2 = {
       footerLink: [
         {
           name: "View Online",
-          url: "https://sideka.id/"
+          url: "https://website.desa.id/cms/login"
         }
       ]
     },
